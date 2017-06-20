@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABAAC55F-FE0F-48B3-8836-2DBA42BB5D9A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>University</RootNamespace>
+    <AssemblyName>University</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="AI.aspx" />
+    <Content Include="blog.aspx" />
+    <Content Include="Blog_List.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="course.aspx" />
+    <Content Include="DBMS.aspx" />
+    <Content Include="DisplayBlog_Page.aspx" />
+    <Content Include="FlowPlayer\embed.min.js" />
+    <Content Include="FlowPlayer\flowplayer-3.2.12.min.js" />
+    <Content Include="FlowPlayer\flowplayer-3.2.16.swf" />
+    <Content Include="FlowPlayer\flowplayer.controls-3.2.15.swf" />
+    <Content Include="FlowPlayer\flowplayer.js" />
+    <Content Include="FlowPlayer\flowplayer.min.js" />
+    <Content Include="FlowPlayer\flowplayer.pseudostreaming-3.2.12.swf" />
+    <Content Include="FlowPlayer\flowplayer.swf" />
+    <Content Include="FlowPlayer\flowplayerhls.swf" />
+    <Content Include="FlowPlayer\index.html" />
+    <Content Include="FlowPlayer\LICENSE.txt" />
+    <Content Include="FlowPlayer\README.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="img\ADD.png" />
+    <Content Include="img\AI_1_250x200.jpg" />
+    <Content Include="img\dbms_new_1_250x200.gif" />
+    <Content Include="img\Delete.jpg" />
+    <Content Include="img\EDIT.png" />
+    <Content Include="img\java_1_250x200.jpg" />
+    <Content Include="img\robotics_1_250x200.jpg" />
+    <Content Include="img\update.jpg" />
+    <Content Include="Java.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="FlowPlayer\LICENSE.md" />
+    <Content Include="MasterPage2.Master" />
+    <None Include="Properties\PublishProfiles\Arooshi.pubxml" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Robotics.aspx" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterTemplate\css\coin-slider.css" />
+    <Content Include="MasterTemplate\css\style.css" />
+    <Content Include="MasterTemplate\Images\content_bg.gif" />
+    <Content Include="MasterTemplate\Images\fbg_bg.gif" />
+    <Content Include="MasterTemplate\Images\gal1.jpg" />
+    <Content Include="MasterTemplate\Images\gal2.jpg" />
+    <Content Include="MasterTemplate\Images\gal3.jpg" />
+    <Content Include="MasterTemplate\Images\gal4.jpg" />
+    <Content Include="MasterTemplate\Images\gal5.jpg" />
+    <Content Include="MasterTemplate\Images\gal6.jpg" />
+    <Content Include="MasterTemplate\Images\img1.jpg" />
+    <Content Include="MasterTemplate\Images\img2.jpg" />
+    <Content Include="MasterTemplate\Images\li.gif" />
+    <Content Include="MasterTemplate\Images\main_bg.gif" />
+    <Content Include="MasterTemplate\Images\menu_a.gif" />
+    <Content Include="MasterTemplate\Images\menu_bg.gif" />
+    <Content Include="MasterTemplate\Images\overlay.png" />
+    <Content Include="MasterTemplate\Images\search.gif" />
+    <Content Include="MasterTemplate\Images\search_bg.gif" />
+    <Content Include="MasterTemplate\Images\slide1.jpg" />
+    <Content Include="MasterTemplate\Images\slide2.jpg" />
+    <Content Include="MasterTemplate\Images\slide3.jpg" />
+    <Content Include="MasterTemplate\Images\slider_bg.gif" />
+    <Content Include="MasterTemplate\Images\slide_a.gif" />
+    <Content Include="MasterTemplate\Images\slide_p.gif" />
+    <Content Include="MasterTemplate\Images\spacer.gif" />
+    <Content Include="MasterTemplate\Images\submit.gif" />
+    <Content Include="MasterTemplate\Images\ta-mark.png" />
+    <Content Include="MasterTemplate\Images\userpic.gif" />
+    <Content Include="MasterTemplate\JS\coin-slider.min.js" />
+    <Content Include="MasterTemplate\JS\cufon-yui.js" />
+    <Content Include="MasterTemplate\JS\droid_sans_400-droid_sans_700.font.js" />
+    <Content Include="MasterTemplate\JS\jquery-1.4.2.min.js" />
+    <Content Include="MasterTemplate\JS\script.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="StudentPortal.aspx" />
+    <Content Include="StyleSheet\ImageGallery.css" />
+    <Content Include="StyleSheet\StyleSheet1.css" />
+    <Content Include="StyleSheet\StyleSheet2.css" />
+    <Content Include="StyleSheet\StyleSheet3.css" />
+    <Content Include="tour.aspx" />
+    <Content Include="Videos\ManishaTayal_117055_Duet.mp4" />
+    <Content Include="Videos\Wildlife_CLIPCHAMP_keep.mp4" />
+    <Content Include="Video_tutorial.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AI.aspx.cs">
+      <DependentUpon>AI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI.aspx.designer.cs">
+      <DependentUpon>AI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blog.aspx.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blog.aspx.designer.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog_List.aspx.cs">
+      <DependentUpon>Blog_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog_List.aspx.designer.cs">
+      <DependentUpon>Blog_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="course.aspx.cs">
+      <DependentUpon>course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="course.aspx.designer.cs">
+      <DependentUpon>course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBMS.aspx.cs">
+      <DependentUpon>DBMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBMS.aspx.designer.cs">
+      <DependentUpon>DBMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayBlog_Page.aspx.cs">
+      <DependentUpon>DisplayBlog_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayBlog_Page.aspx.designer.cs">
+      <DependentUpon>DisplayBlog_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Java.aspx.cs">
+      <DependentUpon>Java.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Java.aspx.designer.cs">
+      <DependentUpon>Java.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage2.Master.cs">
+      <DependentUpon>MasterPage2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage2.Master.designer.cs">
+      <DependentUpon>MasterPage2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Robotics.aspx.cs">
+      <DependentUpon>Robotics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Robotics.aspx.designer.cs">
+      <DependentUpon>Robotics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPortal.aspx.cs">
+      <DependentUpon>StudentPortal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPortal.aspx.designer.cs">
+      <DependentUpon>StudentPortal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tour.aspx.cs">
+      <DependentUpon>tour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tour.aspx.designer.cs">
+      <DependentUpon>tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Video_tutorial.aspx.cs">
+      <DependentUpon>Video_tutorial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Video_tutorial.aspx.designer.cs">
+      <DependentUpon>Video_tutorial.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{6ffe73a3-0670-4944-94ce-f523fe739e61}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62934</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62934/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
